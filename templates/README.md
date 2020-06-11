@@ -35,16 +35,13 @@ To train the model over the Covtype dataset, run this command:
 ```train
 mpiexec -n 6 python train.py --n_clusters 7 --n_components 30 --n_nodes 5 --gamma 0.05098145937100924 --dataset covtype --index 0 --n_dim 10 --n_iterations 50
 ```
-
+The evaluation part is included in `train.py`, and it will output a normalzed mutual inforation (NMI) score of the trained model.
 ## Results
 
-Our model achieves the following average normalzed mutual inforation (NMI) socres after 50 iterations:
+Our model achieves the following average NMI socres after 50 iterations:
 
 | Dataset name       |  Mushrooms  |    MNIST    |   Covtype   |
 | ------------------ |-------------|-------------|-------------|
-| Average NMI        |    0.545    |    0.473    |    0.141    |
+| Average NMI score  |    0.545    |    0.473    |    0.141    |
 
 
-## Contributing
-
-> 📋Pick a licence and describe how to contribute to your code repository. 
