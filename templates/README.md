@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 In the experiment of this paper, one Coordinator process and five Worker processes are generated to simulate the cloud server and five users' devices, respectively.
 
-To prepare a dataset (e.g., the Mushrooms dataset) for training, the features of the dataset needs to be partitioned into five parts  (and the label are partitioned accordingly). Each part is saved as a '.npy' file (e.g., one part of the features is saved as 'mushroom_feature1.npy' and the corresponding part of the labels is saved as 'mushroom_label1.npy'). These files are stored in a path whose name is the name of the dataset (e.g., the files of the Mushrooms dataset are stored in the path ./mushroom/).
+To prepare a dataset (e.g., the Mushrooms dataset) for training, the features of the dataset need to be stored as a two-dimension array whose size is n_samples * n_features. The features then needs to be partitioned into five parts  (and the label are partitioned accordingly). Each part is saved as a '.npy' file (e.g., one part of the features is saved as 'mushroom_feature1.npy' and the corresponding part of the labels is saved as 'mushroom_label1.npy'). These files are stored in a path whose name is the name of the dataset (e.g., the files of the Mushrooms dataset are stored in the path ./mushroom/). Due to the limitation of the size of the supplementary meterial, only the Mushrooms dataset that has been preprocessed is provided in the supplementary meterial. 
 
 To train the model over the Mushrooms dataset, run this command:
 
